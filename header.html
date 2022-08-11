@@ -1,3 +1,5 @@
+<!-- This is the index page and contains all the majority code of the frontend  -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +17,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <!-- custom css file link  -->
     <link rel="stylesheet" href="website.css">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="p1.jpg" type="image/x-icon">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
 	</script> 
@@ -24,7 +24,6 @@
 	</script> 
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
 	</script>
-	
 	
 	<!-- jquery cdn link  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -53,9 +52,9 @@
 
     <nav class="navbar">
         <ul>
-            <li><a class="active" href="website.html">Home</a></li>
+            <li><a class="active" href="header.html">Home</a></li>
             <li><a href="#bottom">About Us</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="Login.html">Login/ Create Account</a></li>
 			<li><a href="faq.html">FAQs</a></li>
         </ul>
     </nav>
@@ -65,38 +64,175 @@
 
 <!--header section ends-->
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<!--home section starts-->
+<!--image slider starts-->
+<div class="container-fluid p-0">
+    <div id="carousel" class="carousel slide hero-slides" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#carousel" data-slide-to="0"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active boat">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft"><b>The Joy of sharing your moments!</b></h2>
+                  <p class="animated fadeInRight">Life's all about going back and cherishing the best moments of your life and what better way than to create blogs!</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item sea">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft"><b>Keeping it realistic :)</b></h2>
+                  <p class="animated fadeInRight">Love how your coffee looks? or the clouds forming those funny unique images in the sky or that neighbour's dog making those puppy eyes! Simply Share it; It's all about the little things in life.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item river">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft"><b>Capture it all...</b></h2>
+                  <p class="animated fadeInRight">Just take out your camera and click those lovely views!</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
 
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script>
+<!--image slider ends-->
+<!--home section ends-->
+
+<header>
+    <br><br>
+    <h1 id="title">Choose your interests!</h1>
+    <p id="description">Thank You For Taking Out your Time To Give our Website a visit! Let us know your areas of interests so that we can get back to you :)</p>
+</header>
+<form id="survey-form">
+
+    <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+    </div>
+    <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+    </div>
+    <div class="form-group">
+        <label for="age" id="number-label">Age</label>
+        <input type="number" name="age" id="number" min="1" max="99" placeholder="Enter Your Age">
+    </div>
+
+    <div class="form-group">
+        <label for="occupation">Choose Something That Best Describes You</label>
+        <select name="occupation" id="dropdown">
+            <option selected disabled value>Select Your Role</option>
+            <option value="Loves to travel">Loves to travel</option>
+            <option value="I always have a book in my hand">I always have a book in my hand</option>
+            <option value="Exploring new fields is my thing">Exploring new fields is my thing</option>
+            <option value="Party? I'm in">Party? I'm in</option>
+            <option value="Alexa what's the trending fashion style right now?">Alexa what's the trending fashion style right now?</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="rating">Would You Recommend Our Website To A Friend ?</label>
+        <div class="radio-group">
+            <input type="radio" name="rating" id="never" value="never"><label for="never"> Never </label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" name="rating" id="maybe" value="maybe"><label for="maybe"> Maybe </label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" name="rating" id="likely" value="likely"><label for="likely"> Likely </label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" name="rating" id="definitely" value="definitely"><label for="definitely">
+                Definitely
+            </label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="liked">Select Things That You Liked About Our Website</label>
+        <div class="checkbox-group">
+            <input type="checkbox" name="liked" id="ui" value="ui"><label for="ui">
+                <svg class="check-mark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <polyline class="check-mark-svg-path" points="25.5,53.5 39.5,67.5 72.5,34.5 " />
+                </svg>
+                <span>UI</span>
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" name="liked" id="features" value="features"><label for="features">
+                <svg class="check-mark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <polyline class="check-mark-svg-path" points="25.5,53.5 39.5,67.5 72.5,34.5 " />
+                </svg>
+                <span>Features</span>
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" name="liked" id="service" value="service"><label for="service">
+                <svg class="check-mark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <polyline class="check-mark-svg-path" points="25.5,53.5 39.5,67.5 72.5,34.5 " />
+                </svg>
+                <span>Creativity</span>
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" name="liked" id="simpleness" value="simpleness"><label for="simpleness">
+                <svg class="check-mark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <polyline class="check-mark-svg-path" points="25.5,53.5 39.5,67.5 72.5,34.5 " />
+                </svg>
+
+                <span>Simpleness</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="remark">Remarks</label>
+        <textarea name="remark" id="remark" placeholder="Growing is all about being better than tomorrow! Help us improve..."></textarea>
+    </div>
+
+    <div class="form-group">
+        <button id="submit" type="submit">Submit</button>
+    </div>
+</form>
+</main>
 
 <!--footer section starts-->
 <footer>
     <div class="about">
-        <p style="font: size 20px;"><a name="bottom"><b>ABOUT SAPLINGS</b></a></p>
+        <p style="font: size 20px;"><a name="bottom"><b>ABOUT BLOGNATION</b></a></p>
         <br>
         <p><b>Blognation </b> is a platform for Urban India to express themselves freely. You can put up anything ranging from your thoughts to the 
             pics of your recent trips without having a judgemental eye here! We strive to create a healthy community which encourages one to truly
@@ -105,7 +241,7 @@
         <!--social icons-->
         <br>
         <p class="details">For more information contact us: </p>
-        <br><br><br>
+        <br>
         <div class="social-link-footer">
             <!--social links-->
             <div class="social-footer">
@@ -124,11 +260,11 @@
     <div class="seconddiv">
         <p style="font-size: 18px;"><b>QUICK LINKS</b></p><br><br>
         <ul>
-            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="Login.html">Login</a></li>
             <br>
             <li><a href="faq.html">FAQ</a></li>
             <br>
-            <li><a href="gallery.html">Home</a></li>
+            <li><a href="header.html">Home</a></li>
             <br>
             <br><br><br>
             <!--payment icons-->
@@ -142,8 +278,6 @@
         <br><br>
         <p style="font-size: 15px;">Subscribe to our Newsletter to get notified for the latest blog posts!</p>
         <br><br>
-        <input type="email" id="email" name="email" placeholder="Your email"> 
-        <br>
     </div>
 </footer>
 <!--footer section ends-->	

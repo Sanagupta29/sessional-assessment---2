@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+    </head>
+    <body>
+        <button onclick="abc()">click me</button>
+        <p id="div1">
+        </p>
+        <div id="parent">
+        </div>
+
+        <script>
+            function abc() {
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function(){
+                    if(this.readyState==4 && this.status==200){
+                        console.log(this.responseText);  // this is the data we have to access
+                        var content = this.responseText;
+                        var data = this.responseText;  
+                        var dataobj = JSON.parse(data);   // we are accessing the data by converting it to JSON object
+                        var parent = document.getElementById("parent");
+                        for(var i=0;i<dataobj.length;i++)
+                        {
+                            var node = document.createElement('h1');
+                            node.innerHTML = dataobj[i].title;
+                            parent.appendChild(node);
+                        }
+                    }
+                }
+                xhr.open("GET","https://jsonplaceholder.typicode.com/posts?utm_source=Mailerlite&utm_medium=E-mail&utm_campaign=Test%20Series&utm_term=2022-08-09");
+                xhr.send();
+            }
+        </script>
+    </body
+</hmtl>
