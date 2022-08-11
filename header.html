@@ -1,4 +1,4 @@
-<!-- This is the index page and contains all the majority code of the frontend  -->
+<!-- This is the index page and contains all the code of the main website  -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -228,7 +228,67 @@
     </div>
 </form>
 </main>
+<br>
 
+<header>
+    <h1 id="title">Meet our bloggers:</h1>
+    <button id="btn">~ Click here to fetch info of our famous bloggers</button>
+</header>
+
+<div id = "api"></div>
+<script src="fetchApi.js"></script>
+
+<br><br><br><br>
+<h2 id="title">Reasons you'll fall in love with blogging ~ </h2>
+<div class="wrapper">
+    <h1></h1>
+    <div class="cols">
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(pictures/background.jpg)">
+              <div class="inner">
+                <p>Share your passion</p>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>When you blog about something you are passionate about, it opens the door to connecting with those around the world who speak your language and have the same passions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(pictures/background.jpg)">
+              <div class="inner">
+                <p>Gain Exposure</p>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Creating blog content for other publications in your industry gives new, relevant audiences the opportunity to discover you and your business. This exposure gives you more traffic that you can convert into leads and customers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(pictures/background.jpg)">
+              <div class="inner">
+                <p>Receive job offers</p>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Blogging in a business-related niche that can help you land a job. Businesses that recognize the benefits of content marketing always looking for employees who can create compelling content. As you network with others in your niche, you will likely run into people who are recruiting for open job positions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+   <br><br><br>
+   
 <!--footer section starts-->
 <footer>
     <div class="about">
@@ -269,7 +329,6 @@
             <br><br><br>
             <!--payment icons-->
             </div>
-
         </ul>
     </div>
     

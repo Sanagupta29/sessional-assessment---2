@@ -1,3 +1,7 @@
+<!-- This is not a part of my main code-->
+<!-- This fetches the entire data on a separate page (for rough use, not included in main code) -->
+<!-- I have written the final code for fetching the api with the rest code in header.html and fetchApi.js files -->
+
 <!DOCTYPE html>
 <hmtl>
     <head>
@@ -14,10 +18,10 @@
                 var xhr = new XMLHttpRequest();
                 xhr.onreadystatechange = function(){
                     if(this.readyState==4 && this.status==200){
-                        console.log(this.responseText);  // this is the data we have to access
+                        console.log(this.responseText);  
                         var content = this.responseText;
                         var data = this.responseText;  
-                        var dataobj = JSON.parse(data);   // we are accessing the data by converting it to JSON object
+                        var dataobj = JSON.parse(data);   
                         var parent = document.getElementById("parent");
                         for(var i=0;i<dataobj.length;i++)
                         {

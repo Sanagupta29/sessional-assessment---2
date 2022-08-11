@@ -61,7 +61,7 @@ $(document).ready(function(){
         $(this).addClass('button-active').siblings().removeClass('button-active');
 
     });
-	// JavaScript Document
+	
     $(document).ready(function() {
     $('#autoWidth').lightSlider({
         autoWidth:true,
