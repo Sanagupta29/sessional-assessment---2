@@ -1,4 +1,5 @@
 var counter = 0;
+var click = 0;
 var infoContainer = document.getElementById("api");
 var btn = document.getElementById("btn");
 btn.addEventListener("click", function () {
@@ -10,12 +11,15 @@ btn.addEventListener("click", function () {
         renderHTML(ourData);
     };
     ourRequest.send();
+    counter = click*10 + 1; 
+    click++;
 });
 
 function renderHTML(data){
     var htmlString = "";
-    for(i=counter; i<10; i++){
-        htmlString += "<p>" + data[i].title + data[i].body + "</p>"
+    var printValue = counter+10;
+    for(var i = counter; i < printValue; i++){
+        htmlString += "<b>" + data[i].title +"</b>"+"<p>" + data[i].body + "</p>";
     }
     infoContainer.insertAdjacentHTML('beforeend',htmlString);
 }
